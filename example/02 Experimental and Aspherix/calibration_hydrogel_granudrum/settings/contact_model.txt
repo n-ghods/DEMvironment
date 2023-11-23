@@ -1,0 +1,6 @@
+variable normal_contact_model string hertz
+variable tangential_contact_model string history
+variable cohesion_model string sjkr
+variable rolling_friction_model string epsd2
+variable surface_model string default
+variable coarsegraining_val string 1

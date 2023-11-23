@@ -1,0 +1,192 @@
+- 08:22:59 INFO    : RLM license checkout path for feature 'asx_calibration' called from 'Aspherix(R) Calibration': C:\Users\Orangepanda\DCS-Computing\Aspherix-6.1.0\share/aspherix\asx-demo-ls61.rlmcloud.com.lic;C:/Users/Orangepanda/DCS-Computing/Aspherix-6.1.0/share/aspherix\asx-demo-ls61.rlmcloud.com.lic
+- 08:22:59 INFO    : Checkout of asx_calibration OK.
+- 08:22:59 INFO    : This is Aspherix(R)calibration version 6.1.0
+                     git commit fd5aa51fd7ca1fb0e4338fad9db72bb7df00cec9
+                     built on Dec  5 2022 at 20:29:29
+                     
+
+- 08:22:59 INFO    : attempting to restart calibraiton
+- 08:22:59 COMMAND : reading file .\granudrum.casx
+- 08:22:59 COMMAND : reading file settings/materials.txt
+- 08:22:59 COMMAND : variable density_p string 999
+- 08:22:59 COMMAND : variable young_w string 1e7
+- 08:22:59 COMMAND : variable young_p string 10000
+- 08:22:59 COMMAND : variable poisson_p string 0.5
+- 08:22:59 COMMAND : variable poisson_w string 0.3
+- 08:22:59 COMMAND : variable char_vel string 1
+- 08:22:59 COMMAND : variable rest_coef_pw string 0.5
+- 08:22:59 COMMAND : variable rest_coef_pp string 0.5
+- 08:22:59 COMMAND : variable fric_coef_pp string 0.01
+- 08:22:59 COMMAND : variable fric_coef_pw string 0.1
+- 08:22:59 COMMAND : variable roll_fric_pp string 0.1
+- 08:22:59 COMMAND : variable roll_fric_pw string 0.2
+- 08:22:59 COMMAND : variable roll_damp_pw string 0.3
+- 08:22:59 COMMAND : variable roll_damp_pp string 0.3
+- 08:22:59 COMMAND : variable cohesion_energy_pp string 500.0
+- 08:22:59 COMMAND : variable cohesion_energy_pw string 200.0
+- 08:22:59 COMMAND : variable init_coh_stress_pw string 0.0
+- 08:22:59 COMMAND : variable init_coh_stress_pp string 0.0
+- 08:22:59 COMMAND : variable max_coh_stress_pp_0 string 1e2
+- 08:22:59 COMMAND : variable max_coh_stress_pp_min string 1
+- 08:22:59 COMMAND : variable max_coh_stress_pp_max string 1e4
+- 08:22:59 COMMAND : variable coh_strength_pp_0 string 0.1
+- 08:22:59 COMMAND : variable coh_strength_pp_min string 0.01
+- 08:22:59 COMMAND : variable coh_strength_pp_max string 0.5
+- 08:22:59 COMMAND : include_file settings/materials.txt
+- 08:22:59 COMMAND : reading file settings/particle_sizes.txt
+- 08:22:59 COMMAND : variable rp1 string 1.0e-03
+- 08:22:59 COMMAND : variable rp2 string 1.4e-03
+- 08:22:59 COMMAND : variable mf1 string 0.5
+- 08:22:59 COMMAND : variable mf2 string 0.5
+- 08:22:59 COMMAND : include_file settings/particle_sizes.txt
+- 08:22:59 COMMAND : reading file settings/contact_model.txt
+- 08:22:59 COMMAND : variable normal_contact_model string hertz
+- 08:22:59 COMMAND : variable tangential_contact_model string history
+- 08:22:59 COMMAND : variable cohesion_model string sjkr
+- 08:22:59 COMMAND : variable rolling_friction_model string epsd
+- 08:22:59 COMMAND : variable surface_model string default
+- 08:22:59 COMMAND : variable coarsegraining_val string 1
+- 08:22:59 COMMAND : include_file settings/contact_model.txt
+- 08:22:59 COMMAND : reading file settings/tests.txt
+- 08:22:59 COMMAND : variable drum_speed string 1
+- 08:22:59 COMMAND : variable filling_level string 0.55
+- 08:22:59 COMMAND : variable ramp_time string 1.0
+- 08:22:59 COMMAND : variable steady_time string 0.5
+- 08:22:59 COMMAND : variable meas_time string 1.0
+- 08:22:59 COMMAND : variable meas_test1 string measurements/granuDrum.dat
+- 08:22:59 COMMAND : include_file settings/tests.txt
+- 08:22:59 COMMAND : reading file settings/general.txt
+- 08:22:59 COMMAND : variable write_fields string 2
+- 08:22:59 COMMAND : variable deltat_out string 0.2
+- 08:22:59 COMMAND : variable scale_weight string 1.0
+- 08:22:59 COMMAND : variable num_chunks string 1
+- 08:22:59 COMMAND : variable cores_per_chunk string 1
+- 08:22:59 COMMAND : variable n_iter string 30
+- 08:22:59 COMMAND : include_file settings/general.txt
+- 08:22:59 COMMAND : param_fixed coarsegraining type scalar value ${coarsegraining_val}
+- 08:22:59 COMMAND : param_fixed Y_w type scalar value ${young_w}
+- 08:22:59 COMMAND : param_fixed Y_p type scalar value ${young_p}
+- 08:22:59 COMMAND : param_fixed poissonsR_w type scalar value ${poisson_w}
+- 08:22:59 COMMAND : param_fixed poissonsR_p type scalar value ${poisson_p}
+- 08:22:59 COMMAND : param_fixed c_rest_pw type scalar value ${rest_coef_pw}
+- 08:22:59 COMMAND : param_fixed c_rest_pp type scalar value ${rest_coef_pp}
+- 08:22:59 COMMAND : param_fixed c_frict_pw type scalar value ${fric_coef_pw}
+- 08:22:59 COMMAND : param_fixed c_rollFrict_pw type scalar value ${roll_fric_pw}
+- 08:22:59 COMMAND : param_fixed c_rollViscDamp_pw type scalar value ${roll_damp_pw}
+- 08:22:59 COMMAND : param_fixed c_rollViscDamp_pp type scalar value ${roll_damp_pp}
+- 08:22:59 COMMAND : param_fixed charVel type scalar value ${char_vel}
+- 08:22:59 COMMAND : param_fixed cohEnDens_pw type scalar value ${cohesion_energy_pw}
+- 08:22:59 COMMAND : param_calibration cohEnDens_pp type log init 700 min 50 max 3000
+- 08:22:59 COMMAND : param_calibration c_frict_pp type log init 0.03 min 0.01 max 0.5
+- 08:22:59 COMMAND : param_calibration c_rollFrict_pp type linear init 0.1 min 0.0 max 0.5
+- 08:22:59 COMMAND : particle_distribution p density ${density_p} radius ${rp1} ${rp2} mass_fraction ${mf1} ${mf2}
+- 08:22:59 COMMAND : optimizer_setting maxFunctionEval ${n_iter}
+- 08:22:59 COMMAND : checking case test1
+- 08:22:59 COMMAND : calibration_case test1 template granuDrum type Aspherix target_param cohEnDens_pp c_frict_pp c_rollFrict_pp measfile ${meas_test1} parameter_overrides pairGranModel ${normal_contact_model} pairTangential ${tangential_contact_model} pairCohesion sjkr pairRollingFriction ${rolling_friction_model} pairSurface ${surface_model} RPMMeas ${drum_speed} fillLevel ${filling_level} simRampTime ${ramp_time} simEquilTime ${steady_time} simMeasTime ${meas_time} dump ${write_fields} dumpT ${deltat_out} scaleweight ${scale_weight} nChunks ${num_chunks} coresPerChunk ${cores_per_chunk}
+- 08:22:59 COMMAND : run single
+- 08:22:59 INFO    : checking whether all required binaries are present...
+- 08:22:59 INFO    : all binaries found
+- 08:22:59 INFO    : entering run mode single
+- 08:22:59 INFO    : Run mode Single:
+                     writing calibrated parameters to  : calibrated_params.txt
+                     aggregated quality functions of all iterations are written to : calibration\results\qf_history.dat
+                     history of best quality functions is written to : calibration\results\conv.dat
+- 08:22:59 INFO    : successfully recovered case test1 from existing directory C:\Users\Orangepanda\DCS-Computing\RUN\Aspherix6.1.0_Examples\calibration\hydrogel_granuDrum_drained\calibration\simulations\Aspherix\test1
+- 08:22:59 INFO    : ------------------------
+- 08:22:59 INFO    : iteration 30
+- 08:22:59 INFO    : setting parameter c_frict_pp to value 0.0817353
+- 08:22:59 INFO    : setting parameter c_rollFrict_pp to value 0.305556
+- 08:22:59 INFO    : setting parameter cohEnDens_pp to value 98.9301
+- 08:22:59 INFO    : added 1 jobs to worker pool. will run them using 1 workers
+- 08:22:59 INFO    : running iteration for case test1 using template granuDrum
+                     up-to-date log file of this simulation is located at : calibration\workDir\workDir.30\Aspherix\test1\logRun.txt
+- 08:22:59 COMMAND : attempting direct simulation run of case test1
+- 08:22:59 COMMAND : direct running script aspherix_granuDrum.asx
+- 08:47:41 INFO    : direct simulation run of case test1 succeeded
+- 08:47:41 INFO    : iteration of case test1 succeeded with return status 0
+- 08:47:42 INFO    : angle: 7.82908
+- 08:47:42 INFO    : cohesion index: 5.12405
+- 08:47:42 INFO    : calibration case test1 returned with value 0 - quality function: 33.4698 - scaled qf: 33.4698
+- 08:47:42 INFO    : total quality function 33.4698
+- 08:47:42 INFO    : ------------------------
+- 08:47:42 INFO    : iteration 31
+- 08:47:42 INFO    : setting parameter c_frict_pp to value 0.0611731
+- 08:47:42 INFO    : setting parameter c_rollFrict_pp to value 0.305556
+- 08:47:42 INFO    : setting parameter cohEnDens_pp to value 98.9301
+- 08:47:42 INFO    : added 1 jobs to worker pool. will run them using 1 workers
+- 08:47:42 INFO    : running iteration for case test1 using template granuDrum
+                     up-to-date log file of this simulation is located at : calibration\workDir\workDir.31\Aspherix\test1\logRun.txt
+- 08:47:42 COMMAND : attempting direct simulation run of case test1
+- 08:47:42 COMMAND : direct running script aspherix_granuDrum.asx
+- 09:11:14 INFO    : direct simulation run of case test1 succeeded
+- 09:11:14 INFO    : iteration of case test1 succeeded with return status 0
+- 09:11:14 INFO    : angle: 9.92625
+- 09:11:14 INFO    : cohesion index: 5.08853
+- 09:11:15 INFO    : calibration case test1 returned with value 0 - quality function: 16.6056 - scaled qf: 16.6056
+- 09:11:15 INFO    : total quality function 16.6056
+- 09:11:15 INFO    : ------------------------
+- 09:11:15 INFO    : iteration 32
+- 09:11:15 INFO    : setting parameter c_frict_pp to value 0.0707107
+- 09:11:15 INFO    : setting parameter c_rollFrict_pp to value 0.324074
+- 09:11:15 INFO    : setting parameter cohEnDens_pp to value 98.9301
+- 09:11:15 INFO    : added 1 jobs to worker pool. will run them using 1 workers
+- 09:11:15 INFO    : running iteration for case test1 using template granuDrum
+                     up-to-date log file of this simulation is located at : calibration\workDir\workDir.32\Aspherix\test1\logRun.txt
+- 09:11:15 COMMAND : attempting direct simulation run of case test1
+- 09:11:15 COMMAND : direct running script aspherix_granuDrum.asx
+- 09:34:40 INFO    : direct simulation run of case test1 succeeded
+- 09:34:40 INFO    : iteration of case test1 succeeded with return status 0
+- 09:34:40 INFO    : angle: 10.2733
+- 09:34:40 INFO    : cohesion index: 5.13958
+- 09:34:41 INFO    : calibration case test1 returned with value 0 - quality function: 14.9889 - scaled qf: 14.9889
+- 09:34:41 INFO    : total quality function 14.9889
+- 09:34:41 INFO    : ------------------------
+- 09:34:41 INFO    : iteration 33
+- 09:34:41 INFO    : setting parameter c_frict_pp to value 0.0707107
+- 09:34:41 INFO    : setting parameter c_rollFrict_pp to value 0.287037
+- 09:34:41 INFO    : setting parameter cohEnDens_pp to value 98.9301
+- 09:34:41 INFO    : added 1 jobs to worker pool. will run them using 1 workers
+- 09:34:41 INFO    : running iteration for case test1 using template granuDrum
+                     up-to-date log file of this simulation is located at : calibration\workDir\workDir.33\Aspherix\test1\logRun.txt
+- 09:34:41 COMMAND : attempting direct simulation run of case test1
+- 09:34:41 COMMAND : direct running script aspherix_granuDrum.asx
+- 09:58:26 INFO    : direct simulation run of case test1 succeeded
+- 09:58:26 INFO    : iteration of case test1 succeeded with return status 0
+- 09:58:26 INFO    : angle: 10.2733
+- 09:58:26 INFO    : cohesion index: 5.12822
+- 09:58:27 INFO    : calibration case test1 returned with value 0 - quality function: 14.9234 - scaled qf: 14.9234
+- 09:58:27 INFO    : total quality function 14.9234
+- 09:58:27 INFO    : ------------------------
+- 09:58:27 INFO    : iteration 34
+- 09:58:27 INFO    : setting parameter c_frict_pp to value 0.0707107
+- 09:58:27 INFO    : setting parameter c_rollFrict_pp to value 0.305556
+- 09:58:27 INFO    : setting parameter cohEnDens_pp to value 115.129
+- 09:58:27 INFO    : added 1 jobs to worker pool. will run them using 1 workers
+- 09:58:27 INFO    : running iteration for case test1 using template granuDrum
+                     up-to-date log file of this simulation is located at : calibration\workDir\workDir.34\Aspherix\test1\logRun.txt
+- 09:58:27 COMMAND : attempting direct simulation run of case test1
+- 09:58:27 COMMAND : direct running script aspherix_granuDrum.asx
+- 10:21:31 INFO    : direct simulation run of case test1 succeeded
+- 10:21:31 INFO    : iteration of case test1 succeeded with return status 0
+- 10:21:31 INFO    : angle: 9.22989
+- 10:21:31 INFO    : cohesion index: 5.11995
+- 10:21:32 INFO    : calibration case test1 returned with value 0 - quality function: 21.3418 - scaled qf: 21.3418
+- 10:21:32 INFO    : total quality function 21.3418
+- 10:21:32 INFO    : ------------------------
+- 10:21:32 INFO    : iteration 35
+- 10:21:32 INFO    : setting parameter c_frict_pp to value 0.0707107
+- 10:21:32 INFO    : setting parameter c_rollFrict_pp to value 0.305556
+- 10:21:32 INFO    : setting parameter cohEnDens_pp to value 85.0102
+- 10:21:32 INFO    : added 1 jobs to worker pool. will run them using 1 workers
+- 10:21:32 INFO    : running iteration for case test1 using template granuDrum
+                     up-to-date log file of this simulation is located at : calibration\workDir\workDir.35\Aspherix\test1\logRun.txt
+- 10:21:32 COMMAND : attempting direct simulation run of case test1
+- 10:21:32 COMMAND : direct running script aspherix_granuDrum.asx
+- 10:45:51 INFO    : direct simulation run of case test1 succeeded
+- 10:45:51 INFO    : iteration of case test1 succeeded with return status 0
+- 10:45:52 INFO    : angle: 8.18023
+- 10:45:52 INFO    : cohesion index: 5.15356
+- 10:45:52 INFO    : calibration case test1 returned with value 0 - quality function: 30.2374 - scaled qf: 30.2374
+- 10:45:52 INFO    : total quality function 30.2374
+- 10:45:52 INFO    : reached max. number of function evaluations
+- 10:45:52 INFO    : calibration ended successfully

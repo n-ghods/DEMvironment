@@ -1,0 +1,92 @@
+##########################################################################
+# NAME:
+# granuDrum
+#
+# DESCRIPTION:
+# A DEM model for a cohesive material is calibrated. Two model parameters
+# are calibrated via a single test:
+#
+#   ------------------------------------------------------------------
+#   |       | Test type              | Calibrated parameters         |
+#   |-----------------------------------------------------------------
+#   |test 1 | granuDrum test         | max. cohes. stress between p. |
+#   |       |                        | cohes. strength between p.    |
+#   ------------------------------------------------------------------
+##########################################################################
+
+## A) MATERIAL PROPERTIES
+include_file settings/materials.txt
+
+# MATERIAL PARTICLE SIZE DISTRIBUTION
+include_file settings/particle_sizes.txt
+
+# B) IMPORT CONTACT MODEL
+include_file settings/contact_model.txt
+
+# C) IMPORT TEST SETTINGS
+include_file settings/tests.txt
+
+# D) IMPORT GENERAL SETTINGS
+include_file settings/general.txt
+
+# 1) FIXED PARAMETERS (they do NOT change during calibration)
+param_fixed coarsegraining type scalar value ${coarsegraining_val}
+param_fixed Y_w type scalar value ${young_w}
+param_fixed Y_p type scalar value ${young_p}
+param_fixed poissonsR_w type scalar value ${poisson_w}
+param_fixed poissonsR_p type scalar value ${poisson_p}
+param_fixed c_rest_pw type scalar value ${rest_coef_pw}
+param_fixed c_rest_pp type scalar value ${rest_coef_pp}
+param_fixed c_frict_pw type scalar value ${fric_coef_pw}
+#param_fixed c_frict_pp type scalar value ${fric_coef_pp}
+#param_fixed c_rollFrict_pp type scalar value ${roll_fric_pp}
+param_fixed c_rollFrict_pw type scalar value ${roll_fric_pw}
+param_fixed c_rollViscDamp_pw type scalar value ${roll_damp_pw}
+param_fixed c_rollViscDamp_pp type scalar value ${roll_damp_pp}
+param_fixed charVel type scalar value ${char_vel}
+#param_fixed cohEnDens_pp type scalar value ${cohesion_energy_pp}
+param_fixed cohEnDens_pw type scalar value ${cohesion_energy_pw}
+#param_fixed initCohStress_pw type scalar value ${init_coh_stress_pw}
+#param_fixed initCohStress_pp type scalar value ${init_coh_stress_pp}
+
+
+
+# 2) TARGET PARAMETERS (they DO change during calibration)
+#param_calibration maxCohesiveStress_pp type linear init ${max_coh_stress_pp_0} min ${max_coh_stress_pp_min} max ${max_coh_stress_pp_max}
+#param_calibration cohesionStrength_pp type linear init ${coh_strength_pp_0} min ${coh_strength_pp_min} max ${coh_strength_pp_max}
+param_calibration cohEnDens_pp type log init 1500 min 100 max 2000
+param_calibration c_frict_pp type log init 0.01 min 0.001 max 0.2
+param_calibration c_rollFrict_pp type log init 0.2 min 0.001 max 0.95
+# 3) PARTICLE DISTRIBUTION
+particle_distribution p density ${density_p} radius ${rp1} ${rp2} &
+    mass_fraction ${mf1} ${mf2}
+
+# 4) SYSTEM SETTINGS (to override settings in etc/dalilama.conf)
+
+# 5) OPTIMIZER SETTINGS
+optimizer_setting maxFunctionEval ${n_iter}
+
+# 6) CALIBRATION SETUP
+
+# granuDrum test
+calibration_case test1 template granuDrum type Aspherix     &
+    target_param cohEnDens_pp c_frict_pp c_rollFrict_pp &
+    measfile ${meas_test1} parameter_overrides              &
+    pairGranModel       ${normal_contact_model}             &
+    pairTangential      ${tangential_contact_model}         &
+    pairCohesion        sjkr                   &
+    pairRollingFriction ${rolling_friction_model}           &
+    pairSurface         ${surface_model}                    &
+    RPMMeas             ${drum_speed}                       &
+    fillLevel           ${filling_level}                    &
+    simRampTime         ${ramp_time}                        &
+    simEquilTime        ${steady_time}                      &
+    simMeasTime         ${meas_time}                        &
+    dump                ${write_fields}                     &
+    dumpT               ${deltat_out}                       &
+    scaleweight         ${scale_weight}                     &
+    nChunks             ${num_chunks}                       &
+    coresPerChunk       ${cores_per_chunk}
+
+# 7) RUN CALIBRATION
+run single

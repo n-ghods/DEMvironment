@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Relational" qualified_name="orangedemvironment.OWRelational.OWRelational" project_name="DEMvironment" version="" title="Relational" position="(300, 150)" />
+		<node id="1" name="User" qualified_name="orangedemvironment.OWUser.OWUser" project_name="DEMvironment" version="" title="User" position="(150, 150)" />
+		<node id="2" name="DOI.json" qualified_name="orangedemvironment.OWDOIJson.OWDOIJson" project_name="DEMvironment" version="" title="DOI.json" position="(600, 150)" />
+		<node id="3" name="MetaData Registry" qualified_name="orangedemvironment.OWMetaDataRegistry.MetaDataRegistry" project_name="DEMvironment" version="" title="MetaData Registry" position="(750, 150)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="0" source_channel="User Data" sink_channel="User Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Full Data (JSON)" sink_channel="JSON Output" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="JSON Content" sink_channel="JSON Content" enabled="true" />
+		<link id="3" source_node_id="2" sink_node_id="3" source_channel="Directory Path" sink_channel="Directory Path" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'authors': '(Cantor, David), (Cardenas Barrantes, Manuel), (Azema, Emilien)', 'controlAreaVisible': True, 'correlation_name_value': 'CantorCompaction', 'edition': '', 'equation_ref': '6', 'id_type': 0, 'id_value': '10.1103/PhysRevLett.124.208003', 'journal': 'PRL', 'publisher': '', 'reference_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\\\xff\xff\xff\x0f\xff\xff\xfe\xdd\x00\x00\x01\x98\xff\xff\xfa\\\xff\xff\xff\x0f\xff\xff\xfe\xdd\x00\x00\x01\x98\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa\\\xff\xff\xff\x0f\xff\xff\xfe\xdd\x00\x00\x01\x98', 'selected_python_file': 'C:/Users/Orangepanda/orange-demvironment/example/01 Relational data/CantorCompactionEqu6.py', 'title': 'Compaction Model for Highly Deformable Particle Assemblies', 'url': 'https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.208003', 'year': '2020', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'affiliation': 'TU Graz', 'controlAreaVisible': True, 'email': 'n_ghods@ymail.com', 'first_name': 'Nazanin', 'last_name': 'Ghods', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\xf2\xff\xff\xffR\xff\xff\xfd\xf6\x00\x00\x01e\xff\xff\xfa\xf3\xff\xff\xffq\xff\xff\xfd\xf5\x00\x00\x01d\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa\xf3\xff\xff\xffq\xff\xff\xfd\xf5\x00\x00\x01d', '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'extracted_directory': 'C:/Users/Orangepanda/orange-demvironment/example/01 Relational data', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\xeb\xff\xff\xff\x0c\xff\xff\xfc\xf4\x00\x00\x00\xff\xff\xff\xfa\xeb\xff\xff\xff\x0c\xff\xff\xfc\xf4\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa\xeb\xff\xff\xff\x0c\xff\xff\xfc\xf4\x00\x00\x00\xff', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'controlAreaVisible': True, 'metadata_warehouse_directory': 'C:/Users/Orangepanda/orange-demvironment/example/warehouse', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\x91\xff\xff\xff#\xff\xff\xfc\xf7\x00\x00\x016\xff\xff\xfa\x92\xff\xff\xffB\xff\xff\xfc\xf6\x00\x00\x015\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa\x92\xff\xff\xffB\xff\xff\xfc\xf6\x00\x00\x015', 'selected_json_file': 'C:/Users/Orangepanda/orange-demvironment/example/01 Relational data', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

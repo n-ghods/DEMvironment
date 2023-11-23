@@ -1,0 +1,7 @@
+#test 1 (granuDrum test)
+variable drum_speed string 1                           # rotations per minute used in the experiment [1/min]
+variable filling_level string 0.55                       # fraction of the drum volume to be filled with particles (0.5 corresponds to a half-full drum) []
+variable ramp_time  string 1.0                          # Interval of time during which the drum increases its velocity linearly from zero to drum_speed [s]
+variable steady_time string 0.5                         # Interval of time after reaching drum_speed. Needs to be large enough for the system to reach an equilibrium state [s]
+variable meas_time string 1.0                           # Interval of time during which the images of the granular material are taken [s]
+variable meas_test1 string measurements/granuDrum.dat   # file containing the reference measurments

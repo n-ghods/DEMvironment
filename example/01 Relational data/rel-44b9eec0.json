@@ -1,0 +1,28 @@
+{
+    "meta_info": {
+        "version": 0,
+        "Archived time": "2023-11-23 14:58:57",
+        "doi": "rel-44b9eec0-9a49-48e5-8f81-7d0bbfb4b22b"
+    },
+    "User Info": {
+        "First Name": "Nazanin",
+        "Last Name": "Ghods",
+        "Email": "n_ghods@ymail.com",
+        "Affiliation": "TU Graz"
+    },
+    "Correlation Info": {
+        "Correlation Name": "CantorCompaction",
+        "Python file path": "C:/Users/Orangepanda/orange-demvironment/example/01 Relational data/CantorCompactionEqu6.py"
+    },
+    "Reference Info": {
+        "Reference Type": "Article",
+        "Title": "Compaction Model for Highly Deformable Particle Assemblies",
+        "Authors": "(Cantor, David), (Cardenas Barrantes, Manuel), (Azema, Emilien)",
+        "Journal": "PRL",
+        "ID Type": "DOI",
+        "ID Value": "10.1103/PhysRevLett.124.208003",
+        "URL": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.208003",
+        "Year": "2020",
+        "Equation Ref. Number": "6"
+    }
+}

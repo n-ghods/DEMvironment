@@ -1,0 +1,6 @@
+variable write_fields string 2          # 0->no dump, 1->std dump, 2->vtk dump
+variable deltat_out string 0.2          # time between successive output steps [s]
+variable scale_weight string 1.0        # Weighing factor of the quality function. Relevant if multiple cases are run at the same time
+variable num_chunks string 1            # cluster mode
+variable cores_per_chunk string 1       # cluster mode
+variable n_iter string 30               # number of simulation iterations performed during an optimization

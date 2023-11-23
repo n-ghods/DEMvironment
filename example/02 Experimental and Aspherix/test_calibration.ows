@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="User" qualified_name="orangedemvironment.OWUser.OWUser" project_name="DEMvironment" version="" title="User" position="(237.0, 194.0)" />
+		<node id="1" name="Read Aspherix" qualified_name="orangedemvironment.OWReadAspherix.OWReadAspherix" project_name="DEMvironment" version="" title="Read Aspherix" position="(467.0, 194.0)" />
+		<node id="2" name="DOI.json" qualified_name="orangedemvironment.OWDOIJson.OWDOIJson" project_name="DEMvironment" version="" title="DOI.json (1)" position="(681.0, 192.0)" />
+		<node id="3" name="MetaData Registry" qualified_name="orangedemvironment.OWMetaDataRegistry.MetaDataRegistry" project_name="DEMvironment" version="" title="MetaData Registry" position="(908.0, 192.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="User Data" sink_channel="User Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="JSON Output" sink_channel="JSON Output" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Directory Path" sink_channel="Directory Path" enabled="true" />
+		<link id="3" source_node_id="2" sink_node_id="3" source_channel="JSON Content" sink_channel="JSON Content" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'affiliation': 'TU Graz', 'controlAreaVisible': True, 'email': 'n_ghods@ymail.com', 'first_name': 'Nazanin', 'last_name': 'Ghods', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfb\x87\xff\xff\xff\xb5\xff\xff\xfe\x8b\x00\x00\x01\xc8\xff\xff\xfb\x88\xff\xff\xff\xd4\xff\xff\xfe\x8a\x00\x00\x01\xc7\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfb\x88\xff\xff\xff\xd4\xff\xff\xfe\x8a\x00\x00\x01\xc7', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'Case_Name': 'Granudrum Drained Hydrogel ', 'Cohesivity': 1, 'Consolidation_Pressure': 3.0, 'Consolidation_level': 0, 'Target_Flow_State': 2, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\x03\xff\xff\xfe\xbf\xff\xff\xfe\xc8\x00\x00\x01\xa7\xff\xff\xfa\x04\xff\xff\xfe\xde\xff\xff\xfe\xc7\x00\x00\x01\xa6\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa\x04\xff\xff\xfe\xde\xff\xff\xfe\xc7\x00\x00\x01\xa6', 'selected_directory': 'C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum', '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'extracted_directory': 'C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfb\xd3\xff\xff\xffr\xff\xff\xfe\x8e\x00\x00\x01q\xff\xff\xfb\xd4\xff\xff\xff\x91\xff\xff\xfe\x8d\x00\x00\x01p\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfb\xd4\xff\xff\xff\x91\xff\xff\xfe\x8d\x00\x00\x01p', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'controlAreaVisible': True, 'metadata_warehouse_directory': 'C:/Users/Orangepanda/Downloads/warehouse', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfb\x05\xff\xff\xff&amp;\xff\xff\xfdk\x00\x00\x019\xff\xff\xfb\x06\xff\xff\xffE\xff\xff\xfdj\x00\x00\x018\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfb\x06\xff\xff\xffE\xff\xff\xfdj\x00\x00\x018', 'selected_json_file': 'C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

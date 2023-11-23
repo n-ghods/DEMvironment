@@ -1,0 +1,4 @@
+# paramName bestVal qf@bestVal fnEvalfBestVal
+c_frict_pp 0.0457837 12.3482 28
+c_rollFrict_pp 0.25 12.3482 28
+cohEnDens_pp 155.92 12.3482 28

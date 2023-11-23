@@ -1,0 +1,40 @@
+{
+    "meta_info": {
+        "version": 0,
+        "Archived time": "2023-11-23 15:09:49",
+        "doi": "exp-9490780b-318b-4618-818d-f910279bf872"
+    },
+    "User Info": {
+        "First Name": "Nazanin",
+        "Last Name": "Ghods",
+        "Email": "n_ghods@ymail.com",
+        "Affiliation": "TU Graz"
+    },
+    "Experiment Info": {
+        "Name of the Experiment": "Dynamic angle of repose",
+        "Measured Quantities": "angle, cohesion index",
+        "Measurement Device": "Granudrum",
+        "Methods/Software for Data Collection": "granudrum software",
+        "Method for Processing Data": "surface fluctuation averaging",
+        "Standards and Calibration Information": "None",
+        "Environmental/Experimental Conditions": "Normal",
+        "People Involved": "Nazanin Ghods",
+        "Unit System": "SI"
+    },
+    "Particle Info": {
+        "Particle's Material": "Hydrogel",
+        "Particle's Diameter (m)": "0.001",
+        "Particle's Shape": "Sphere",
+        "Particle's Density": "2",
+        "Media": "air",
+        "Link to MSDS or more details": "None",
+        "Material preprocessing (if applied)": "No"
+    },
+    "Data Info": {
+        "File location/Links": "C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum/measurements/granuDrum.dat",
+        "Number of variables": "Multi",
+        "Date of data collection": "2022-10-25",
+        "Place of data collection": "TU Graz",
+        "Licenses/restrictions": "None"
+    }
+}

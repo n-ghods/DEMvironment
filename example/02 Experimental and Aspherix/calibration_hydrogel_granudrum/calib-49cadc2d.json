@@ -1,0 +1,105 @@
+{
+    "meta_info": {
+        "version": 0,
+        "Archived time": "2023-11-23 15:14:11",
+        "doi": "calib-49cadc2d-7424-4d27-91f6-7c1aa9b2a6ed"
+    },
+    "User Data": {
+        "First Name": "Nazanin",
+        "Last Name": "Ghods",
+        "Email": "n_ghods@ymail.com",
+        "Affiliation": "TU Graz"
+    },
+    "Calibration Case": {
+        "Case Name": "Granudrum Drained Hydrogel ",
+        "Cohesivity": "cohesive",
+        "Target Flow State": "Rapid",
+        "Consolidation level": "low",
+        "Consolidation Pressure": 3.0,
+        "Local Directory": "C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum"
+    },
+    "Aspherix Info": {
+        "version": "6.1.0",
+        "git commit": "fd5aa51fd7ca1fb0e4338fad9db72bb7df00cec9",
+        "attempting to": "restart",
+        "run mode": "single"
+    },
+    "Templates Info": {
+        "granuDrum": [
+            "cohEnDens_pp",
+            "c_frict_pp",
+            "c_rollFrict_pp"
+        ]
+    },
+    "Models Info": {
+        "normal_contact_model": "hertz",
+        "tangential_contact_model": "history",
+        "cohesion_model": "sjkr",
+        "rolling_friction_model": "epsd",
+        "surface_model": "default",
+        "coarsegraining_val": 1
+    },
+    "Input Parameters": {
+        "cohesion_energy_pw": 200.0,
+        "cohesion_energy_pp": 500.0,
+        "roll_damp_pp": 0.3,
+        "roll_damp_pw": 0.3,
+        "roll_fric_pw": 0.2,
+        "roll_fric_pp": 0.1,
+        "fric_coef_pw": 0.1,
+        "fric_coef_pp": 0.01,
+        "rest_coef_pp": 0.5,
+        "rest_coef_pw": 0.5,
+        "poisson_w": 0.3,
+        "poisson_p": 0.5,
+        "young_p": 10000,
+        "young_w": 10000000.0,
+        "density_p": 999
+    },
+    "PSD": {
+        "radii_list": [
+            0.0014,
+            0.001
+        ],
+        "mass_fractions_list": [
+            0.5,
+            0.5
+        ],
+        "dispersity": 2
+    },
+    "Calibrated Parameter Properties": {
+        "c_rollFrict_pp": {
+            "type": "linear",
+            "init": 0.1,
+            "min": 0.0,
+            "max": 0.5
+        },
+        "c_frict_pp": {
+            "type": "log",
+            "init": 0.03,
+            "min": 0.01,
+            "max": 0.5
+        },
+        "cohEnDens_pp": {
+            "type": "log",
+            "init": 700,
+            "min": 50,
+            "max": 3000
+        }
+    },
+    "Convergence": {
+        "isconverged": "Yes"
+    },
+    "Calibrated Parameters": {
+        "c_frict_pp": 0.0457837,
+        "c_rollFrict_pp": 0.25,
+        "cohEnDens_pp": 155.92
+    },
+    "Template Meta Info": {
+        "granuDrum": {
+            "version": 0,
+            "Archived time": "2023-11-23 15:09:43",
+            "doi": "exp-88a536f2-9d88-4c48-9e96-453055247bbc"
+        }
+    }
+}

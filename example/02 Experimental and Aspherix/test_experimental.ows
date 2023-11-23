@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="User" qualified_name="orangedemvironment.OWUser.OWUser" project_name="DEMvironment" version="" title="User" position="(150, 150)" />
+		<node id="1" name="Experiment" qualified_name="orangedemvironment.OWExperiment.OWExperiment" project_name="DEMvironment" version="" title="Experiment" position="(351.0, 150.0)" />
+		<node id="2" name="DOI.json" qualified_name="orangedemvironment.OWDOIJson.OWDOIJson" project_name="DEMvironment" version="" title="DOI.json" position="(534.0, 149.0)" />
+		<node id="3" name="MetaData Registry" qualified_name="orangedemvironment.OWMetaDataRegistry.MetaDataRegistry" project_name="DEMvironment" version="" title="MetaData Registry" position="(684.0, 149.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="User Data" sink_channel="User Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Full Data (JSON)" sink_channel="JSON Output" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="JSON Content" sink_channel="JSON Content" enabled="true" />
+		<link id="3" source_node_id="2" sink_node_id="3" source_channel="Directory Path" sink_channel="Directory Path" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'affiliation': 'TU Graz', 'controlAreaVisible': True, 'email': 'n_ghods@ymail.com', 'first_name': 'Nazanin', 'last_name': 'Ghods', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfb\x87\xff\xff\xff\xb5\xff\xff\xfe\x8b\x00\x00\x01\xc8\xff\xff\xfb\x88\xff\xff\xff\xd4\xff\xff\xfe\x8a\x00\x00\x01\xc7\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfb\x88\xff\xff\xff\xd4\xff\xff\xfe\x8a\x00\x00\x01\xc7', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'calibration': 'None', 'conditions': 'Normal', 'controlAreaVisible': True, 'data_collection_method': 'granudrum software', 'data_processing': 'surface fluctuation averaging', 'date_collection': '2022-10-25', 'device': 'Granudrum', 'exp_name': 'Dynamic angle of repose', 'file_location': 'C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum/measurements/granuDrum.dat', 'license_info': 'None', 'num_variables_combo_value': 'Multi', 'num_variables_spin_value': 2, 'particle_density': '2', 'particle_diameter': '0.001', 'particle_link': 'None', 'particle_material': 'Hydrogel', 'particle_media': 'air', 'particle_preprocessing': 'No', 'particle_shape': 'Sphere', 'people_involved': 'Nazanin Ghods', 'place_collection': 'TU Graz', 'quantities': 'angle, cohesion index', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa3\xff\xff\xfe`\xff\xff\xfd\x99\x00\x00\x01\xd2\xff\xff\xfa3\xff\xff\xfe`\xff\xff\xfd\x99\x00\x00\x01\xd2\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa3\xff\xff\xfe`\xff\xff\xfd\x99\x00\x00\x01\xd2', 'unit_system': 'SI', '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'extracted_directory': 'C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum/measurements', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfam\xff\xff\xffZ\xff\xff\xfdk\x00\x00\x01m\xff\xff\xfan\xff\xff\xffy\xff\xff\xfdj\x00\x00\x01l\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfan\xff\xff\xffy\xff\xff\xfdj\x00\x00\x01l', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'controlAreaVisible': True, 'metadata_warehouse_directory': 'C:/Users/Orangepanda/orange-demvironment/example/warehouse', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\x91\xff\xff\xff#\xff\xff\xfc\xf7\x00\x00\x016\xff\xff\xfa\x92\xff\xff\xffB\xff\xff\xfc\xf6\x00\x00\x015\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfa\x92\xff\xff\xffB\xff\xff\xfc\xf6\x00\x00\x015', 'selected_json_file': 'C:/Users/Orangepanda/orange-demvironment/example/02 Experimental and Aspherix/calibration_hydrogel_granudrum/measurements', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
