@@ -11,12 +11,14 @@ Ensure you have the following prerequisites met before proceeding with the insta
 
 ### Installation Steps:
 
-#### 1. **Using pip**:
+#### Step 1: **Install the package using pip**:
 
-Pip is a package manager for Python packages. If you have Python and pip installed, you can easily install the add-on using the following command:
+Pip is a package manager for Python packages. If you have Python and pip installed, you must install the add-on using the following steps/commands:
 
+- change to the location on disk that contains the DEMvironment package (this folder contains the 'setup.py' file)
+- issue the following command in a python/conda console
 ```bash
-pip install -e orange-demvironment
+pip install -e .
 ```
 
 #### 2. **Using Orange's Add-on manager**:
