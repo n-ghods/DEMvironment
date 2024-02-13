@@ -7,8 +7,10 @@ This is an [orange3](https://orangedatamining.com/) add-on package that is aimed
 - setup: python file containing information about version and developers of the tool 
 - orangedemvironment: directory with scripts used to define the widgets in the the package
 - examples: directory containing examples, use casing the environment
+- doc: installation instructions and widget documentation
 
-
+## Installation
+see doc/Installation.md
 
 ## License
 
