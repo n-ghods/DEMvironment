@@ -21,9 +21,9 @@ Pip is a package manager for Python packages. If you have Python and pip install
 pip install -e .
 ```
 
-#### 2. **Using Orange's Add-on manager**:
+#### Step 2: **Load the Add on in Orange's Add-on manager**:
 
-Orange comes with a built-in add-on manager. You can use it to install the add-on:
+Orange comes with a built-in add-on manager. You can use it to load the add-on:
 
 - Open Orange.
 - Navigate to `Options` > `Add-ons`.
@@ -31,7 +31,7 @@ Orange comes with a built-in add-on manager. You can use it to install the add-o
 - Check the box next to `orange-demvironment`.
 - Click 'OK'. The add-on will be installed, and you may need to restart Orange for the changes to take effect.
 
-- Open Orange.
+- Open Orange (restart).
 - Navigate to the canvas. If the installation was successful, you should see the new widget icons related to the add-on in the toolbox.
 
 ### Troubleshooting:
